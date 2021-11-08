@@ -12,3 +12,4 @@ def test_cal():
     assert 3 + 2 ==5
     assert 4 + 4==8
     assert 5 + 4==9
+    assert 10 + 5==15
