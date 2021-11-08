@@ -25,6 +25,7 @@ pipeline {
       agent { node {label 'master'}}
       // Create Docker Tage = Git branch + Jenkins build number + Git commit
       //Change for commit 2 times
+      //Change
       environment {
         DOCKER_TAG="${GIT_BRANCH.tokenize('/').pop()}-${BUILD_NUMBER}-${GIT_COMMIT.substring(0,7)}"
       }
